@@ -41,6 +41,7 @@
         "pio_matrix.pio.h": "c",
         "numbers.h": "c",
         "timer.h": "c",
-        "buttons.h": "c"
+        "buttons.h": "c",
+        "pwm.h": "c"
     }
 }

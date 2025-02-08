@@ -22,9 +22,9 @@
 #define D_I 38
 #define D_F 3
 
-#define DUTY_CYCLE_1 0.12   // 180
-#define DUTY_CYCLE_2 0.0735 // 90
-#define DUTY_CYCLE_3 0.025  // 0
+#define DUTY_CYCLE_1 0.12   // 180º
+#define DUTY_CYCLE_2 0.0735 // 90º
+#define DUTY_CYCLE_3 0.025  // 0º
 
 #define DUTY_CYCLE_STEP 0.001
 
