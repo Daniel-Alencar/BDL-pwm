@@ -8,7 +8,7 @@
 #include "hardware/pwm.h" 
 #include "pwm/pwm.h"
 
-#define USE_BITDOGLAB true
+#define USE_BITDOGLAB false
 
 #if USE_BITDOGLAB
   #define PWM_PIN 12
