@@ -47,8 +47,14 @@ o ambiente de execução deve ser a placa BitDogLab.
 
 ## Vídeo de Demonstração
 ```bash
-   Link: 
+   Link: https://youtu.be/XKw51_FLzN8?si=BnBOmP_8aHiLCruw
 ```
+
+## Adendos
+
+Foram utilizadas as funções auxiliares compute_pwm_parameters() e compute_pwm_frequency() para o cálculo exato dos parâmetros de dividor inteiro, divisor fracionário e wrap para uma frequência desejada do PWM.
+
+Esssas funções estão definidas no arquivo pwm/pwm.h.
 
 ## Licença
 Este projeto é licenciado sob a licença MIT – consulte o arquivo LICENSE para mais detalhes.
