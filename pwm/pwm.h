@@ -7,8 +7,7 @@
 // d_f deve ser um valor entre 1 a 15
 // wrap deve ser um valor entre 1 a 65535
 void compute_pwm_parameters(
-    uint32_t frequency, uint32_t f_clock,
-    uint32_t parameters[3]
+    uint32_t frequency, uint32_t f_clock
 ) {
     uint32_t d_i, d_f;
     uint32_t wrap;
@@ -18,9 +17,6 @@ void compute_pwm_parameters(
         for (d_f = 0; d_f <= 15; d_f++) {
             wrap = (uint32_t)(f_clock / ((d_i + (d_f / 16.0)) * frequency)) - 1;
             if (wrap >= 1 && wrap <= 65535) {
-                parameters[0] = d_i;
-                parameters[1] = d_f;
-                parameters[2] = wrap;
                 found = true;
                 printf("d_i: %d | d_f: %d | wrap: %d\n", d_i, d_f, wrap);
                 return;

@@ -18,6 +18,7 @@
 
 #define FREQUENCY 50
 #define F_CLOCK 125000000
+
 #define WRAP 65465
 #define D_I 38
 #define D_F 3
@@ -26,6 +27,7 @@
 #define DUTY_CYCLE_2 0.0735 // 90º
 #define DUTY_CYCLE_3 0.025  // 0º
 
+// step mínimo de 0.025
 #define DUTY_CYCLE_STEP 0.001
 
 uint scene = 0;
@@ -48,9 +50,7 @@ int main() {
   //definir o valor de wrap
   pwm_set_wrap(slice, WRAP);
 
-  // uint *parameters;
-  // compute_pwm_parameters(FREQUENCY, F_CLOCK, &parameters);
-  // compute_pwm_frequency(F_CLOCK, WRAP, D_I, D_F);
+  compute_pwm_frequency(F_CLOCK, WRAP, D_I, D_F);
 
   //define o divisor de clock do PWM
   pwm_set_clkdiv(slice, D_I + (D_F) / 10.0);
