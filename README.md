@@ -47,7 +47,7 @@ o ambiente de execução deve ser a placa BitDogLab.
 
 ## Vídeo de Demonstração
 ```bash
-   Link: https://youtu.be/XKw51_FLzN8?si=BnBOmP_8aHiLCruw
+   Link: https://youtu.be/UvHroQvv9DM
 ```
 
 ## Adendos
